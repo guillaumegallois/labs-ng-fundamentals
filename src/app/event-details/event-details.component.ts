@@ -18,14 +18,7 @@ import { Component } from '@angular/core';
       <div>
         Time: {{event.time}}
       </div>
-      <div>
-        Address:
-        <div>
-          {{event.location.address}}
-          {{event.location.city}}
-          {{event.location.country}}
-        </div>
-      </div>
+      <event-details-address [location]="event.location"></event-details-address>
     </div>
   `,
 })
